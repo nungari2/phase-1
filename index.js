@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
  const displayOrder = (order) => {
     // Create a container div for the order item
     const orderItem = document.createElement('div');
-    orderItem.classList.add('order-item');  // Add a class for better styling if needed
+    orderItem.classList.add('order-item');  
 
     const orderIdElement = document.createElement('p');
     orderIdElement.textContent = `Order ID: ${order.id}`;

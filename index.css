@@ -1,12 +1,13 @@
 #burger-details {
     display: none;
     width:300px;
-    margin:auto;
+    margin: auto;
+    
   
 }
 .container{
     float: left;
-    background-color: bisque;
+    background-color: brown;
 }
 div {
     width:300px;
@@ -38,5 +39,6 @@ div {
       color:white ;
     }
     body{
-      background-color: white;
+      background-color: black;
+      color: white;
     }
