@@ -72,54 +72,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Clear the name input
             document.getElementById('buyer-name').value = '';
-            pizzaDetailsContainer.style.display = 'none'; 
+            pizzaDetailsContainer.style.display = 'block'; 
         })
         .catch(error => console.error("Error placing order:", error));
  });
 
  // Function to display the order details on the page
  const displayOrder = (order) => {
-
-    
-
     // Create a container div for the order item
     const orderItem = document.createElement('div');
-    
-    
+    orderItem.classList.add('order-item');  // Add a class for better styling if needed
+
     const orderIdElement = document.createElement('p');
-    orderIdElement.textContent =` Order ID: ${order.id}`;
-    orderContainer.appendChild(orderIdElement);
+    orderIdElement.textContent = `Order ID: ${order.id}`;
+    orderItem.appendChild(orderIdElement);
 
     const pizzaIdElement = document.createElement('p');
     pizzaIdElement.textContent = `Pizza ID: ${order.pizzaId}`;
-    orderContainer.appendChild(pizzaIdElement);
+    orderItem.appendChild(pizzaIdElement);
 
     const buyerNameElement = document.createElement('p');
     buyerNameElement.textContent = `Buyer: ${order.buyerName}`;
-    orderContainer.appendChild(buyerNameElement);
+    orderItem.appendChild(buyerNameElement);
 
     const statusElement = document.createElement('p');
     statusElement.textContent = `Status: ${order.status}`;
-    orderContainer.appendChild(statusElement);
+    orderItem.appendChild(statusElement);
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete Order';
+    
+    // Attach event listener to delete button
     deleteButton.addEventListener('click', () => {
-        deleteOrder(order.id, orderContainer); 
+        deleteOrder(order.id, orderItem);
     });
+
+    // Append delete button to order item
     orderItem.appendChild(deleteButton);
 
-    
-   
+    // Append the order item to the order list
     orderList.appendChild(orderItem);
 
-   
-    const ordersContainer = document.getElementById('orders-container');
-    ordersContainer.style.display = 'block'; 
- };
+    // Make sure the orders container is visible
+    orderContainer.style.display = 'block'; 
+};
 
- const deleteOrder = (orderId, orderItem) => {
-    // Send DELETE request to server (assuming the server supports it)
+// Updated deleteOrder function to correctly remove order from DOM
+const deleteOrder = (orderId, orderItem) => {
+    // Send DELETE request to server (ensure the server allows DELETE requests)
     fetch(`https://phase-1-y1vc.onrender.com/orders/${orderId}`, {
         method: 'DELETE',
     })
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error deleting order:', error);
         alert('Failed to delete the order.');
     });
- };
+};
  // Call fetchPizzas to load the pizza list when the page loads
  fetchPizzas();
 
