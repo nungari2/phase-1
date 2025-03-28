@@ -41,12 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
  // Function to place an order
  document.getElementById('Buy').addEventListener('click', () => {
     const pizzaId = document.getElementById('Buy').getAttribute('data-pizza-id');
-    const buyerName = document.getElementById('buyer-name').value;
+    const buyerName = document.getElementById('buyer-name').value.toUpperCase();
 
     if (!buyerName) {
         alert('Please enter your name.');
         return;
     }
+    
     
 
     const order = {
