@@ -1,0 +1,35 @@
+#burger-details {
+    display: none;
+    width:300px;
+    margin:auto;
+  
+}
+.container{
+    float: left;
+    background-color: bisque;
+}
+div {
+    width:300px;
+    margin:auto;
+  }
+  .container-2 {
+    background-color: brown;
+    float:left;
+
+  }
+  .pizzaPieContainer{
+    width:50%;
+    border-color: red;
+    align-items: center;
+  }
+  h1{
+    text-align: center;
+  }
+  #pizza{
+    width: 250px;
+        height: 200px;
+    }
+    #poster{
+        width: 250px;
+        height: 250px;
+    }
