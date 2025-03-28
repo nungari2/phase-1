@@ -23,4 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
            })
            .catch(error => console.error("Error fetching pizzas:", error));
     };
-})   
+ })
+  // Function to fetch and display the details of a selected pizza
+ const showPizzaDetails = (pizza) => {
+    document.getElementById('pizza-quantity').textContent = `Quantity Available: ${pizza.quantity}`;
+    document.getElementById('pizza-description').textContent = `Description: ${pizza.description}`;
+    document.getElementById('pizza-price').textContent = `Price: $${pizza.price}`;
+   document.getElementById('pizza').src = pizza.img; // Set the pizza image
+
+    // Show the details container
+    pizzaDetailsContainer.style.display = 'block';
+
+    // Set the pizza ID on the "Make Order" button
+    const buyButton = document.getElementById('Buy');
+    buyButton.setAttribute('data-pizza-id', pizza.id);
+ };
+ 
