@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
    
      // Function to fetch and display the list of pizzas
     const fetchPizzas = () => {
-       fetch('http://localhost:3000/pizzas')
+       fetch('https://phase-1-y1vc.onrender.com/pizzas')
            .then(response => response.json())
            .then(data => {
                data.forEach(pizza => {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Send order to server
-    fetch('http://localhost:3000/orders', {
+    fetch('https://phase-1-y1vc.onrender.com/orders', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  const deleteOrder = (orderId, orderItem) => {
     // Send DELETE request to server (assuming the server supports it)
-    fetch(`http://localhost:3000/orders/${orderId}`, {
+    fetch('https://phase-1-y1vc.onrender.com/orders/id', {
         method: 'DELETE',
     })
     .then(response => response.json())
