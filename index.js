@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     const orderIdElement = document.createElement('p');
-    orderIdElement.textContent = `Order ID: ${order.id}`;
+    orderIdElement.textContent =` Order ID: ${order.id}`;
     orderContainer.appendChild(orderIdElement);
 
     const pizzaIdElement = document.createElement('p');
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  const deleteOrder = (orderId, orderItem) => {
     // Send DELETE request to server (assuming the server supports it)
-    fetch('https://phase-1-y1vc.onrender.com/orders/id', {
+    fetch(`https://phase-1-y1vc.onrender.com/orders/${orderId}`, {
         method: 'DELETE',
     })
     .then(response => response.json())
