@@ -134,6 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Failed to delete the order.');
     });
  };
+ // Call fetchPizzas to load the pizza list when the page loads
+ fetchPizzas();
+
 
  });
  
