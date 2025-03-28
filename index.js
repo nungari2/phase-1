@@ -118,5 +118,22 @@ document.addEventListener('DOMContentLoaded', () => {
     ordersContainer.style.display = 'block'; 
  };
 
+ const deleteOrder = (orderId, orderItem) => {
+    // Send DELETE request to server (assuming the server supports it)
+    fetch(`http://localhost:3000/orders/${orderId}`, {
+        method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(() => {
+        // After successful deletion, remove the order item from the DOM
+        orderItem.remove();
+        alert('Order deleted successfully!');
+    })
+    .catch(error => {
+        console.error('Error deleting order:', error);
+        alert('Failed to delete the order.');
+    });
+ };
+
  });
  
