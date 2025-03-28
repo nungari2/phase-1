@@ -1,0 +1,561 @@
+{
+  "pizzas": [
+    {
+      "id": "1",
+      "name": "Margherita",
+      "veg": true,
+      "price": 3,
+      "description": "Cheese",
+      "quantity": 1,
+      "img": "https://foodish-api.com/images/pizza/pizza59.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Tandoori Paneer",
+      "veg": true,
+      "price": 7,
+      "description": "Spiced paneeer, Onion,Green Capsicum & Red Paprika in Tandoori Sauce",
+      "quantity": 1,
+      "img": "https://foodish-api.com/images/pizza/pizza16.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Veggie Supreme",
+      "veg": true,
+      "price": 8,
+      "description": "Black Olives,Green Capsicum, Mushroom, Onion,Red Paprika, Sweet Corn",
+      "quantity": 1,
+      "img": "https://foodish-api.com/images/pizza/pizza92.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Veggie Kebab Surprise",
+      "veg": true,
+      "price": 4,
+      "description": "Veg Kebab,Onion,Green Capsicum,Tomato & Sweet Corn in Tandoori Sauce",
+      "quantity": 1,
+      "img": "https://foodish-api.com/images/pizza/pizza47.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Chicken Supreme",
+      "veg": false,
+      "price": 7,
+      "description": "Herbed Chicken,Schezwan Chicken Meatball,Chicken Tikka",
+      "quantity": 1,
+      "img": "https://foodish-api.com/images/pizza/pizza16.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "pizzaId": 1,
+      "buyerName": "John Njoroge",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "pizzaId": 2,
+      "buyerName": "Jane Wangui",
+      "status": "Completed"
+    },
+    {
+      "id": "59d6",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "ade2",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "3fb6",
+      "pizzaId": null,
+      "buyerName": "mary",
+      "status": "Pending"
+    },
+    {
+      "id": "7d66",
+      "pizzaId": null,
+      "buyerName": "mary",
+      "status": "Pending"
+    },
+    {
+      "id": "138e",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "504a",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "12e1",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "10b5",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "4947",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "1c33",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "2949",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "33f5",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "464d",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "6535",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "a517",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "2190",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "7dec",
+      "pizzaId": null,
+      "buyerName": "carol",
+      "status": "completed"
+    },
+    {
+      "id": "e1e7",
+      "pizzaId": null,
+      "buyerName": "carol",
+      "status": "Pending"
+    },
+    {
+      "id": "e55a",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "6f91",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "Pending"
+    },
+    {
+      "id": "1766",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "e1c3",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "4647",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "7816",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "4be7",
+      "pizzaId": "2",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "a98c",
+      "pizzaId": "3",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "d0c4",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "9b95",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "1652",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "eb38",
+      "pizzaId": "undefined",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "4b3e",
+      "pizzaId": "undefined",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "854a",
+      "pizzaId": "undefined",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "4671",
+      "pizzaId": "undefined",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "ff3b",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "d938",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "4cb0",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "8f74",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "5f03",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "3a53",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "f480",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "811f",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "7e7a",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "cf0a",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "82cd",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "0c1b",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "7d74",
+      "pizzaId": null,
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "1a81",
+      "pizzaId": "1",
+      "buyerName": "carol",
+      "status": "completed"
+    },
+    {
+      "id": "b135",
+      "pizzaId": "1",
+      "buyerName": "carol",
+      "status": "completed"
+    },
+    {
+      "id": "ff79",
+      "pizzaId": "1",
+      "buyerName": "carol",
+      "status": "completed"
+    },
+    {
+      "id": "f759",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "2d07",
+      "pizzaId": "1",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "f691",
+      "pizzaId": "1",
+      "buyerName": "carol",
+      "status": "completed"
+    },
+    {
+      "id": "f997",
+      "pizzaId": "2",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "b4ca",
+      "pizzaId": "2",
+      "buyerName": "ANN",
+      "status": "completed"
+    },
+    {
+      "id": "6aa8",
+      "pizzaId": null,
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "2a4e",
+      "pizzaId": null,
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "67ad",
+      "pizzaId": null,
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "41f9",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "5998",
+      "pizzaId": "5",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "939b",
+      "pizzaId": null,
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "f928",
+      "pizzaId": "3",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "2942",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "ec88",
+      "pizzaId": "1",
+      "buyerName": " carol",
+      "status": "completed"
+    },
+    {
+      "id": "b374",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "7ecd",
+      "pizzaId": "2",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "c8b8",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "f669",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "feef",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "e68f",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "baf0",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "2cea",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "38a2",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "8812",
+      "pizzaId": "4",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "fb28",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "fb46",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "0a9f",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "9b9c",
+      "pizzaId": "2",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "0232",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "77a4",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "7bf4",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    },
+    {
+      "id": "e4a4",
+      "pizzaId": "1",
+      "buyerName": " carol",
+      "status": "completed"
+    },
+    {
+      "id": "065e",
+      "pizzaId": "1",
+      "buyerName": "Carol",
+      "status": "completed"
+    },
+    {
+      "id": "cf40",
+      "pizzaId": "1",
+      "buyerName": " mary",
+      "status": "completed"
+    }
+  ]
+}
