@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
            })
            .catch(error => console.error("Error fetching pizzas:", error));
     };
- })
+ 
   // Function to fetch and display the details of a selected pizza
  const showPizzaDetails = (pizza) => {
     document.getElementById('pizza-quantity').textContent = `Quantity Available: ${pizza.quantity}`;
@@ -37,5 +37,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set the pizza ID on the "Make Order" button
     const buyButton = document.getElementById('Buy');
     buyButton.setAttribute('data-pizza-id', pizza.id);
- };
+ }
+ // Function to place an order
+ document.getElementById('Buy').addEventListener('click', () => {
+    const pizzaId = document.getElementById('Buy').getAttribute('data-pizza-id');
+    const buyerName = document.getElementById('buyer-name').value;
+
+    if (!buyerName) {
+        alert('Please enter your name.');
+        return;
+    }
+    
+
+    const order = {
+        pizzaId: pizzaId,
+        buyerName: buyerName,
+        status: 'completed' 
+    };
+
+    // Send order to server
+    fetch('http://localhost:3000/orders', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(order),
+    })
+        .then(response => response.json())
+        .then(data => {
+            alert(`Order placed successfully! Order ID: ${data.id}`);
+
+            // Show the order details
+            displayOrder(data);
+
+            // Clear the name input
+            document.getElementById('buyer-name').value = '';
+            pizzaDetailsContainer.style.display = 'none'; 
+        })
+        .catch(error => console.error("Error placing order:", error));
+ });
+
+ });
  
