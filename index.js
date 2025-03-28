@@ -77,5 +77,46 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error("Error placing order:", error));
  });
 
+ // Function to display the order details on the page
+ const displayOrder = (order) => {
+
+    
+
+    // Create a container div for the order item
+    const orderItem = document.createElement('div');
+    
+    
+    const orderIdElement = document.createElement('p');
+    orderIdElement.textContent = `Order ID: ${order.id}`;
+    orderContainer.appendChild(orderIdElement);
+
+    const pizzaIdElement = document.createElement('p');
+    pizzaIdElement.textContent = `Pizza ID: ${order.pizzaId}`;
+    orderContainer.appendChild(pizzaIdElement);
+
+    const buyerNameElement = document.createElement('p');
+    buyerNameElement.textContent = `Buyer: ${order.buyerName}`;
+    orderContainer.appendChild(buyerNameElement);
+
+    const statusElement = document.createElement('p');
+    statusElement.textContent = `Status: ${order.status}`;
+    orderContainer.appendChild(statusElement);
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete Order';
+    deleteButton.addEventListener('click', () => {
+        deleteOrder(order.id, orderContainer); 
+    });
+    orderItem.appendChild(deleteButton);
+
+    
+   
+    orderList.appendChild(orderItem);
+
+   
+    const ordersContainer = document.getElementById('orders-container');
+    ordersContainer.style.display = 'block'; 
+ };
+
  });
  
